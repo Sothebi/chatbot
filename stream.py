@@ -450,6 +450,7 @@ def process_string(input_string):
 st.title('AI客服实现用户意图识别项目')
 
 st.text('设置接收时间为10s每轮，确保每轮不会一次性提供太多意图')
+st.text('下面代码运行时间稍微有点长，15s左右，请耐心等待......')
 user_input = st.text_input("请输入要判定的chat",key = 'input1')
 
 # 当用户输入字符串并点击按钮时，处理字符串并显示结果
