@@ -463,7 +463,7 @@ if st.button("处理字符串"):
         st.text_area("中间结果", value=f"part1判定：{ans1}\npart2判定：{ans2}\npart3判定：{ans3}\n",height=60, key="temp_result")
         p1_ans = dict1[use_part1(ans1)]
         p2_ans = dict2[use_part2(ans2,ans3)]
-        st.text_area("中间结果2", value=f"part1编码：{p1_ans}\npart2编码：{p2_ans},height=60, key="temp_result2")
+        st.text_area("中间结果2", value=f"part1编码：{use_part1(ans1)}\npart2编码：{use_part2(ans2,ans3)},height=60, key="temp_result2")
         result_text = f"处理结果：\n积分充值获取与使用问题：{p1_ans}\n积分投诉退款问题：{p2_ans}"
         st.text_area("处理结果", value=result_text, height=100, key="result_text")
     else:
