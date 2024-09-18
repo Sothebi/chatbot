@@ -359,8 +359,13 @@ def use_part2(l1,l3):
         elif l1[3]==1:
             return "000500"
     if l1[2]==1:   #积分还没退
-        if l1[10]==1:
-            return "000600"
+        if l1[10]==1:  #已投诉积分仍未退
+            if l3=='A':
+                return "000601"
+            elif l3=='B':
+                return "000602"
+            else:
+                return "000600"
         else:
             return "000600"
     if l1[3]==1:
