@@ -467,9 +467,9 @@ if st.button("处理字符串"):
         st.text_area("处理结果", value=result_text, height=100, key="result_text")
     else:
         st.warning("请输入字符串")
-st.code("prompt1 = '''"+prompt1+"'''", language='python')
-st.code("prompt2 = '''"+prompt2+"'''", language='python')
-st.code("prompt3 = '''"+prompt3+"'''", language='python')
+#st.code("prompt1 = '''"+prompt1+"'''", language='python')
+#st.code("prompt2 = '''"+prompt2+"'''", language='python')
+#st.code("prompt3 = '''"+prompt3+"'''", language='python')
 
 #展示映射表
 st.text("获取积分、积分使用类")
