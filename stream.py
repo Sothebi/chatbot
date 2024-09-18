@@ -5,8 +5,6 @@ import csv
 import pandas as pd
 import tqdm
 import json
-from odps import ODPS
-from matplotlib import pyplot as plt
 
 class Doubao:
     def __init__(self, api_key, url_base, model_id):
